@@ -1,32 +1,34 @@
-About This Project
+## davec.eth
 
-Node.js app to run in a Docker container.
+### About This Project
 
-Hello world example.
+Node.js app to run in a Docker container and provide a quick Hello world example.
 
-To be updated and built out over time to be the web app that runs the davec.eth website for my personal use.
-
-May also add some features that are designed for it to be ran on a local machine to contain more senstive info/trading functions etc - idea being I don't want to be responsable for holding peoples API keys etc - nore do I want my own on the internet, can't trust someone to do it for you, do it yourself approach.
+To be updated and built out over time to be the web app that runs the davec.eth website and for my own local use.
 
 Do what you want with it.
 
-Install instructions:
+### Install instructions:
 
-Assuming you have Docker already installed, run the following three commands in a terminal (Should be ok on Windows/Linux/MacOS)
+Assuming you have Docker already installed, run the following commands in a terminal (Should be ok on Windows/Linux/MacOS)
 
-//Download
+- Download
 
-Git clone https://github.com/davec6201/dockernode.git
+`git clone https://github.com/davec6201/dockernode.git`
 
-// Change into newly created directory 
+- Change into newly created directory 
 
-cd dockernode
+`cd dockernode`
 
-// Build the docker image - replacing daveceth with your own username/handle
-docker build . -t daveceth/node_app --secret id=npmrc,src=.npmrc
+- Build the docker image - replacing daveceth with your own username/handle
 
-// 
+`docker build . -t daveceth/node_app --secret id=npmrc,src=.npmrc`
 
+- Run the image - 8000 internal docker port exposed to outside port 49160.
+
+`docker run -p 49160:8080 -d daveceth/node_app`
+
+- You should now be able to visit this locally at http://localhost:49160
 
 
 
