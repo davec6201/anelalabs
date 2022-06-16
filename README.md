@@ -1,12 +1,8 @@
-## davec.eth
+## Anela Labs
 
 ### About This Project
 
-Node.js app to run in a Docker container and provide a quick Hello world example.
-
-To be updated and built out over time to be the web app that runs the davec.eth website and for my own local use.
-
-Do what you want with it.
+Website to host Anela Labs homepage
 
 ### Install instructions:
 
@@ -22,11 +18,11 @@ Assuming you have Docker already installed, run the following commands in a term
 
 - Build the docker image - replacing daveceth with your own username/handle
 
-`docker build . -t daveceth/node_app --secret id=npmrc,src=.npmrc`
+`docker build . -t daveceth/anela_labs --secret id=npmrc,src=.npmrc`
 
 - Run the image - 8000 internal docker port exposed to outside port 49160.
 
-`docker run -p 49160:8080 -d daveceth/node_app`
+`docker run -p 49160:8080 -d daveceth/anela_labs`
 
 - You should now be able to visit this locally at http://localhost:49160
 
