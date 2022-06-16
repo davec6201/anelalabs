@@ -12,7 +12,6 @@ COPY package*.json /usr/src/app/
 # Run command using secrets
 RUN --mount=type=secret,mode=0644,id=npmrc,target=/usr/src/app/.npmrc npm ci --omit=dev
 
-
 # --------------> The production image
 FROM node:lts-alpine
 
