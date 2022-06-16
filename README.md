@@ -10,19 +10,19 @@ Assuming you have Docker already installed, run the following commands in a term
 
 - Download
 
-`git clone https://github.com/davec6201/dockernode.git`
+`git clone https://github.com/davec6201/anelalabs.git`
 
 - Change into newly created directory 
 
-`cd dockernode`
+`cd anelalabs`
 
 - Build the docker image - replacing daveceth with your own username/handle
 
-`docker build . -t daveceth/anela_labs --secret id=npmrc,src=.npmrc`
+`docker build . -t daveceth/anelalabs --secret id=npmrc,src=.npmrc`
 
 - Run the image - 8000 internal docker port exposed to outside port 49160.
 
-`docker run -p 49160:8080 -d daveceth/anela_labs`
+`docker run -p 49160:8080 -d daveceth/anelalabs`
 
 - You should now be able to visit this locally at http://localhost:49160
 
