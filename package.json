@@ -1,8 +1,8 @@
 {
   "name": "docker_web_app",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Node app - davec.eth",
-  "author": "davec.eth",
+  "author": "davec.eth @daveceth",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
