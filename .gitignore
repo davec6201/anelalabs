@@ -1,5 +1,3 @@
 notes.txt
 .env
 .secret
-.env
-**/node_modules
