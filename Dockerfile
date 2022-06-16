@@ -1,14 +1,17 @@
+# syntax=docker/dockerfile:1.2
+
 # --------------> The build image
 FROM node:latest AS build
 
 # Create app directory
 WORKDIR /usr/src/app
 
-# Copy files over
-COPY package*.json /user/src/app/
+# Copy package.json and package-lock.json files over
+COPY package*.json /usr/src/app/
 
 # Run command using secrets
-RUN --mount=type=secret,mode=0644,id=npmrc,target=/usr/src/app/.npmrc npm ci --only=production
+RUN --mount=type=secret,mode=0644,id=npmrc,target=/usr/src/app/.npmrc npm ci --omit=dev
+
 
 # --------------> The production image
 FROM node:lts-alpine

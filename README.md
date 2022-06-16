@@ -12,16 +12,20 @@ Do what you want with it.
 
 Install instructions:
 
-Assuming you have Docker already installed.
+Assuming you have Docker already installed, run the following three commands in a terminal (Should be ok on Windows/Linux/MacOS)
 
 //Download
+
 Git clone https://github.com/davec6201/dockernode.git
 
 // Change into newly created directory 
+
 cd dockernode
 
 // Build the docker image - replacing daveceth with your own username/handle
 docker build . -t daveceth/node_app --secret id=npmrc,src=.npmrc
+
+// 
 
 
 

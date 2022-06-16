@@ -6,4 +6,6 @@ Dockerfile
 .gitignore
 .npmrc
 .env
+aws.json
+.secret
 notes.txt
